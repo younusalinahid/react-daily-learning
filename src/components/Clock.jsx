@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./button";
 
 class Clock extends React.Component {
   // constructor(props) {
@@ -7,7 +8,7 @@ class Clock extends React.Component {
   // }
 
   //shortcut without constructior
-  state = { date: new Date() };
+  state = { date: new Date(), locale: "bn-BD" };
 
   componentDidMount() {
     this.clockTimer = setInterval(() => this.tick(), 1000);
@@ -23,13 +24,23 @@ class Clock extends React.Component {
     });
   }
 
+  handleClick = (locale) => {
+    this.setState({
+      locale,
+    });
+  };
+
   render() {
+    const { date, locale } = this.state;
     return (
-      <h1 className="heading">
-        <span className="text">
-          {this.state.date.toLocaleTimeString(this.props.locale)}
-        </span>
-      </h1>
+      <div>
+        <h1 className="heading">
+          <span className="text">{date.toLocaleTimeString(locale)}</span>
+        </h1>
+        <Button change={this.handleClick} locale="en-US">
+          Click Here
+        </Button>
+      </div>
     );
   }
 }
