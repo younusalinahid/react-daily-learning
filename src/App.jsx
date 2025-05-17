@@ -1,12 +1,13 @@
 import Clock from "./components/Clock";
 import ClockList from "./components/ClockList";
 import Form from "./components/Form";
-import FROM from "./components/Form";
+import Calculator from "./components/Calculator";
 
 function App() {
   return (
     <div>
-      <Form />
+      {/* <Form /> */}
+      <Calculator />
     </div>
   );
 }
