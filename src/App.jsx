@@ -1,3 +1,4 @@
+import React from "react";
 import Clock from "./components/Clock";
 import ClockList from "./components/ClockList";
 import Form from "./components/Form";
@@ -8,26 +9,32 @@ import Text from "./components/composition/Text";
 import Bracket from "./components/composition/Bracket";
 import ClickCounter from "./components/ClickCounter";
 import HoverCounter from "./components/HoverCounter";
+import Todo from "./components/Todo";
 
-function App() {
-  return (
-    <div>
-      {/* <Form /> */}
-      {/* <Calculator /> */}
-      {/* <Text /> */}
-      {/* <Emoji>
-        {({ addEmoji }) => (
-          <Bracket>
-            {({ addBracket }) => (
-              <Text addEmoji={addEmoji} addBracket={addBracket} />
-            )}
-          </Bracket>
-        )}
-      </Emoji> */}
-      <ClickCounter />
-      <HoverCounter />
-    </div>
-  );
+export default class App extends React.Component {
+  render() {
+    return (
+      <div className="app">
+        <Todo />
+      </div>
+    )
+  }
 }
-
-export default App;
+//   return (
+//     <div>
+//       {/* <Form /> */}
+//       {/* <Calculator /> */}
+//       {/* <Text /> */}
+//       {/* <Emoji>
+//         {({ addEmoji }) => (
+//           <Bracket>
+//             {({ addBracket }) => (
+//               <Text addEmoji={addEmoji} addBracket={addBracket} />
+//             )}
+//           </Bracket>
+//         )}
+//       </Emoji> */}
+//       <ClickCounter />
+//       <HoverCounter />
+//     </div>
+//   );
