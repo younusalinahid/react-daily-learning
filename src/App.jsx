@@ -6,6 +6,8 @@ import Calculator from "./components/Calculator";
 import Emoji from "./components/composition/Emoji";
 import Text from "./components/composition/Text";
 import Bracket from "./components/composition/Bracket";
+import ClickCounter from "./components/ClickCounter";
+import HoverCounter from "./components/HoverCounter";
 
 function App() {
   return (
@@ -13,7 +15,7 @@ function App() {
       {/* <Form /> */}
       {/* <Calculator /> */}
       {/* <Text /> */}
-      <Emoji>
+      {/* <Emoji>
         {({ addEmoji }) => (
           <Bracket>
             {({ addBracket }) => (
@@ -21,7 +23,9 @@ function App() {
             )}
           </Bracket>
         )}
-      </Emoji>
+      </Emoji> */}
+      <ClickCounter />
+      <HoverCounter />
     </div>
   );
 }
