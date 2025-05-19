@@ -19,11 +19,12 @@ import Title from "./components/Title";
 import FormClass from "./components/FormClass";
 import Time from "./components/Time";
 import Counter from "./components/Counter";
+import LayoutComponentOne from "./components/LayoutComponent";
 
 function App() {
   return (
     <div>
-      <Counter />
+      <LayoutComponentOne />
     </div>
   );
 }
