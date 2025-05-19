@@ -10,12 +10,14 @@ import Bracket from "./components/composition/Bracket";
 import ClickCounter from "./components/ClickCounter";
 import HoverCounter from "./components/HoverCounter";
 import Todo from "./components/Todo";
+import MyComponentClass from "./components/MyComponentClass";
+import MyComponent from "./components/MyComponent";
 
 export default class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <Todo />
+        <MyComponent />
       </div>
     )
   }
