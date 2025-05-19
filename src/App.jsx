@@ -18,11 +18,12 @@ import ShowCount from "./components/ShowCount";
 import Title from "./components/Title";
 import FormClass from "./components/FormClass";
 import Time from "./components/Time";
+import Counter from "./components/Counter";
 
 function App() {
   return (
     <div>
-      <Time />
+      <Counter />
     </div>
   );
 }
