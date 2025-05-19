@@ -20,11 +20,14 @@ import FormClass from "./components/FormClass";
 import Time from "./components/Time";
 import Counter from "./components/Counter";
 import LayoutComponentOne from "./components/LayoutComponent";
+import './assets/css/global.css';
+import Logo from './components/Logo';
 
 function App() {
   return (
-    <div>
-      <LayoutComponentOne />
+    <div className="App">
+      <h1>Learn with Sumit</h1>
+      <Logo />
     </div>
   );
 }
